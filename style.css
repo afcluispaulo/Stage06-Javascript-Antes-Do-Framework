@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav  {
+    position: absolute;
+    z-index: 1;
+}
+
+nav a {
+    color: white;
+}
+
+.home {
+    background-image: url("/assets/mountains-universe-1.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

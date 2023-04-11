@@ -11,7 +11,7 @@ export class Router {
 
         window.history.pushState({}, "", event.target.href)
 
-        this.handle
+        this.handle()
      }
 
      handle() {

@@ -4,20 +4,67 @@
     box-sizing: border-box;
 }
 
-nav  {
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    object-fit: cover;
     position: absolute;
-    z-index: 1;
+    width: 100%;
+    height: 122px;
 }
 
 nav a {
+    position: relative;
+    z-index: 1;
     color: white;
+    
 }
 
-.home {
+ .home  {
     background-image: url("/assets/home.png");
-
-    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
     height: 100%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+.home h1 {
+    color: white;
+   
+}
+
+.home button {
+    margin-top: 24px;
+    
+}
+
+.hide {
+    display: none;
+}
+
+ .theuniverse {
+    background-image: url("/assets/theuniverse.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.theuniverse h1, p {
+    color: white;
+}

@@ -64,6 +64,9 @@ nav a {
 
     border: 2px solid #FFFFFF;
     border-radius: 5px;
+
+    cursor: pointer;
+    text-transform: uppercase;
     
 }
 

@@ -50,21 +50,39 @@ nav a {
     display: none;
 }
 
+
  .theuniverse {
     background-image: url("/assets/theuniverse.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     height: 100%;
+    color:white;
 
     position: absolute;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
-.theuniverse h1, p {
-    color: white;
+.explorer {
+    background-image: url("/assets/explorer.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    color:white;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.theuniverse h1, p,
+.explorer h1, p {
+    margin-left: 102px;
+}
+

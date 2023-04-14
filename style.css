@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --menu-principal-color: #8D8D99;
+    --menu-click-color: #FFFFFF;
 
+}
 .menu {
     display: flex;
     flex-direction: row;
@@ -25,9 +29,13 @@ nav {
 nav a {
     position: relative;
     z-index: 1;
-    color: white;
+    color: var(--menu-principal-color);
     text-transform: uppercase;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--menu-click-color);
 }
 
  .home  {
@@ -45,9 +53,23 @@ nav a {
     
 }
 
+nav a, 
+.home button,
+.explorer h1,
+.theuniverse h1 {
+    font-family: 'Roboto';
+    font-size: bold;
+}
+
+nav a {
+    font-size: 21.6667px;
+    line-height: 22px;
+}
+
 .home h1 {
     color: white;
-   
+    font-size: 48px;
+    line-height: 125%;
 }
 
 .home button {
@@ -67,6 +89,8 @@ nav a {
 
     cursor: pointer;
     text-transform: uppercase;
+
+    font-size: 14px;
     
 }
 
@@ -107,7 +131,10 @@ nav a {
     margin-left: 102px;
 }
 
+
 .theuniverse p,
 .explorer p {
     margin-top: 16px;
+    font-size: 18px;
+    line-height: 160%;
 }

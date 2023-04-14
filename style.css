@@ -38,6 +38,9 @@ nav a:hover {
     color: var(--menu-click-color);
 }
 
+.navClick {
+    color: var(--menu-click-color);
+}
  .home  {
     background-image: url("/assets/home.png");
     background-repeat: no-repeat;

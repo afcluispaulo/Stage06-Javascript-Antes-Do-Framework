@@ -21,9 +21,6 @@ const controls = Controls({
     theExplorerMenu
 })
 
-
-
-
 export class Router {
     
     routes = {} 

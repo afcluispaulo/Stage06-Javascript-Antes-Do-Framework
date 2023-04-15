@@ -1,4 +1,5 @@
 export class Router {
+    
     routes = {} 
 
     add(routeName, page) {
@@ -17,10 +18,22 @@ export class Router {
      handle() {
         const { pathname } = window.location
         const route = this.routes[pathname] || this.routes[404]
+        
         fetch(route)
         .then(data => data.text())
         .then(html => {
             document.querySelector('#app').innerHTML = html
         })
+        
      }
+     
 }
+
+/*
+    if (route == this.routes["/"]) {
+            homeMenu.classList.add("navClick")
+
+            theUniverseMenu.classList.remove("navClick")
+            theExplorerMenu.classList.remove("navClick")
+        }
+*/

@@ -1,15 +1,4 @@
-import { Router } from './router.js'
-import {
-    btnHome,
-    homeMenu,
-
-    btnTheUnverse,
-    theUniverseMenu,
-    
-    btnTheExplorer,
-    theExplorerMenu
-} from "./events/elements.js"
-
+import {Router} from "./router.js"
 
 const router = new Router()
 router.add('/', "pages/home.html")

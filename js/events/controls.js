@@ -24,5 +24,11 @@ export default function Controls({
         homeMenu.classList.remove("navClick")
         theUniverseMenu.classList.remove("navClick")
     }
+
+    return {
+        clickHome,
+        clickTheUniverse,
+        clickExplorer,
+    }
 }
 

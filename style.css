@@ -7,6 +7,7 @@
 :root {
     --menu-principal-color: #8D8D99;
     --menu-click-color: #FFFFFF;
+    
 }
 
 .menu {
@@ -42,7 +43,8 @@ nav a:hover {
 .navClick {
     color: var(--menu-click-color);
 }
- .home  {
+
+.home  {
     background-image: url("/assets/home.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,8 +59,9 @@ nav a:hover {
     
 }
 
+
 nav a, 
-.home button,
+.home h1 button,
 .explorer h1,
 .theuniverse h1 {
     font-family: 'Roboto';
@@ -68,6 +71,10 @@ nav a,
 nav a {
     font-size: 21.6667px;
     line-height: 22px;
+}
+.home-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .home h1 {

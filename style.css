@@ -17,6 +17,7 @@
     align-self: center;
     object-fit: cover;
     position: absolute;
+    z-index: 1;
     width: 100%;
     height: 122px;
 }
@@ -24,13 +25,14 @@
 nav {
     display: flex;
     align-items: center;
+    
+}
+.menu nav {
     margin-left: 72px;
     gap: 32px;
 }
-
 nav a {
-    position: relative;
-    z-index: 1;
+   
     color: var(--menu-principal-color);
     text-transform: uppercase;
     text-decoration: none;
@@ -50,12 +52,12 @@ nav a:hover {
     background-size: cover;
     width: 100%;
     height: 100%;
-    position: absolute;
-
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     
 }
 
@@ -75,7 +77,9 @@ nav a {
 .home-text {
     display: flex;
     flex-direction: column;
+    
 }
+
 
 .home h1 {
     color: var(--menu-click-color);
@@ -83,7 +87,7 @@ nav a {
     line-height: 125%;
 }
 
-.home nav a {
+.home-href {
     font-family: 'Roboto', sans-serif;
     font-size: 21.67px;
     line-height: 21.67px;
@@ -93,8 +97,7 @@ nav a {
     justify-content: center;
     align-items: center;
     padding: 12px 32px;
-    gap: 8px;
-
+    
     margin-top: 24px;
     background-color: transparent;
     color: var(--menu-click-color);

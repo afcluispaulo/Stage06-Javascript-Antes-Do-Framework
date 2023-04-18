@@ -7,7 +7,7 @@
 :root {
     --menu-principal-color: #8D8D99;
     --menu-click-color: #FFFFFF;
-    
+    font-size: 62.5%;
 }
 
 .menu {
@@ -19,7 +19,7 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 122px;
+    height: 12.2rem;
 }
 
 nav {
@@ -28,11 +28,11 @@ nav {
     
 }
 .menu nav {
-    margin-left: 72px;
-    gap: 32px;
+    margin-left: 7.2rem;
+    gap: 3.2rem;
 }
+
 nav a {
-   
     color: var(--menu-principal-color);
     text-transform: uppercase;
     text-decoration: none;
@@ -57,10 +57,8 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
+       
 }
-
 
 nav a, 
 .home h1 button,
@@ -71,9 +69,10 @@ nav a,
 }
 
 nav a {
-    font-size: 21.6667px;
-    line-height: 22px;
+    font-size: 2.1rem;
+    line-height: 2.2rem;
 }
+
 .home-text {
     display: flex;
     flex-direction: column;
@@ -84,32 +83,32 @@ nav a {
 
 .home h1 {
     color: var(--menu-click-color);
-    font-size: 48px;
-    line-height: 125%;
+    font-size: 4.8rem;
+    line-height: 12.5rem
 }
 
 .home-href {
     font-family: 'Roboto', sans-serif;
-    font-size: 21.67px;
-    line-height: 21.67px;
+    font-size: 2.1rem;
+    line-height: 2.1rem;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 32px;
+    padding: 1.2rem 3.2rem;
     
-    margin-top: 24px;
+    margin-top: 2.4rem;
     background-color: transparent;
     color: var(--menu-click-color);
 
-    border: 2px solid var(--menu-click-color);
-    border-radius: 5px;
+    border: .2rem solid var(--menu-click-color);
+    border-radius: .5rem;
 
     cursor: pointer;
     text-transform: uppercase;
 
-    font-size: 14px;
+    font-size: 1.4rem;
     
 }
 
@@ -130,24 +129,24 @@ nav a {
 }
 
 .text {
-    margin-top: 261px;
-    margin-left: 142px;
-    width: 648px;
-    height: 203px;
+    margin-top: 26.1rem;
+    margin-left: 14.2rem;
+    width: 64.8rem;
+    height: 20.3rem;
 }
 
 .text h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 4.8rem;
     line-height: 125%;
 }
 
 .text p {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 160%;
-    margin-top: 16px;
+    margin-top: 1.6rem;
 
 }
 

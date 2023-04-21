@@ -8,6 +8,9 @@ export default function Controls({
     function clickHome() {
         bodyTheme.classList.add("homeTheme")
 
+        bodyTheme.classList.remove("theUniverseTheme")
+        bodyTheme.classList.remove("explorerTheme")
+        
         homeMenu.classList.add("navClick")
 
         theUniverseMenu.classList.remove("navClick")
@@ -16,6 +19,8 @@ export default function Controls({
 
     function clickTheUniverse() {
         bodyTheme.classList.remove("homeTheme")
+        bodyTheme.classList.remove("explorerTheme")
+
         bodyTheme.classList.add("theUniverseTheme")
         theUniverseMenu.classList.add("navClick")
 
@@ -24,7 +29,9 @@ export default function Controls({
     }
 
     function clickExplorer() {
+        bodyTheme.classList.remove("homeTheme")
         bodyTheme.classList.remove("theUniverseTheme")
+
         bodyTheme.classList.add("explorerTheme")
         theExplorerMenu.classList.add("navClick")
 

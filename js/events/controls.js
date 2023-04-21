@@ -24,6 +24,8 @@ export default function Controls({
     }
 
     function clickExplorer() {
+        bodyTheme.classList.remove("theUniverseTheme")
+        bodyTheme.classList.add("explorerTheme")
         theExplorerMenu.classList.add("navClick")
 
         homeMenu.classList.remove("navClick")

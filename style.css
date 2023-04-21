@@ -100,6 +100,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 17.2rem;
     
 }
 
@@ -148,7 +149,7 @@ nav a {
 }
 
 .text {
-    margin-top: 26.1rem;
+    margin-top: 6.3rem;
     margin-left: clamp(5rem, 5rem + 2vw, 14.2rem);
     margin-right: clamp(5rem, 5rem + 2vw, 14.2rem);
     width: 64.8rem;

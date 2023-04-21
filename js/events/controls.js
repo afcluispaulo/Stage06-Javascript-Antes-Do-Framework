@@ -1,10 +1,13 @@
 export default function Controls({
+    bodyTheme,
     homeMenu,
     theUniverseMenu,
     theExplorerMenu,
 
 }) {
     function clickHome() {
+        bodyTheme.classList.add("homeTheme")
+
         homeMenu.classList.add("navClick")
 
         theUniverseMenu.classList.remove("navClick")

@@ -15,8 +15,7 @@
     flex-direction: row;
     align-items: center;
     align-self: center;
-    object-fit: cover;
-    position: absolute;
+   
     z-index: 1;
     width: 100%;
     height: 12.2rem;
@@ -48,28 +47,28 @@ nav a:hover {
     color: var(--menu-click-color);
 }
 
-.home  {
-    background-image: url("/assets/home.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-       
+ 
 }
 
-.theuniverse {
+.homeTheme {
+    background-image: url("/assets/home.png");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.theuniverseTheme {
     background-image: url("/assets/theuniverse.png");
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
-.explorer {
+.explorerTheme {
     background-image: url("/assets/explorer.png");
     background-size: cover ;
     background-repeat: no-repeat;
@@ -93,6 +92,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -134,11 +134,7 @@ nav a {
 
 .theuniverse,
 .explorer {
-    width: 100%;
-    height: 100%;
     color: var(--menu-click-color);
-
-    position: absolute;
 
     display: flex;
     

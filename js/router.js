@@ -1,5 +1,6 @@
 import Controls from "./events/controls.js"
 import {
+    bodyTheme,
     btnHome,
     homeMenu,
 
@@ -11,6 +12,7 @@ import {
 } from "./events/elements.js"
 
 const controls = Controls({
+    bodyTheme,
     btnHome,
     homeMenu,
 
@@ -44,6 +46,7 @@ export class Router {
         const route = this.routes[pathname] || this.routes[404]
 
         if (this.routes[pathname] == this.routes["/"]) {
+        
             controls.clickHome()
         } else if (this.routes[pathname] == this.routes["/theuniverse"]) {
             controls.clickTheUniverse()

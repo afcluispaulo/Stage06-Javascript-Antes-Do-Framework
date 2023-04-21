@@ -15,6 +15,8 @@ export default function Controls({
     }
 
     function clickTheUniverse() {
+        bodyTheme.classList.remove("homeTheme")
+        bodyTheme.classList.add("theUniverseTheme")
         theUniverseMenu.classList.add("navClick")
 
         homeMenu.classList.remove("navClick")

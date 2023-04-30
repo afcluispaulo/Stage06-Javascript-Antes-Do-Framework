@@ -1,0 +1,27 @@
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Poppins', sans-serif;
+    --text-color: #303030;
+
+    --hue: 194;
+    --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+table {
+    width: 112rem;
+    border-collapse: collapse;
+}
+
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background-color: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.6rem 2.4rem 1.6rem 4.0rem;
+}

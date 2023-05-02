@@ -41,7 +41,9 @@ table * {
 }
 
 table th,
-table td {
+table td,
+td.user p,
+td.user span {
     color: white
 }
 

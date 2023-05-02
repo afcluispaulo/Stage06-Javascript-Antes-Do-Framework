@@ -14,8 +14,10 @@
 
     --hue-input-txt-color: 240;
     --input-text-color: hsla(var(--hue-input-txt-color), 6%, 51%, 1);
-}
 
+    --hue-header-button: 195;
+    --button-color: hsla(var(--hue-header-button), 91%, 25%, 1);
+}
 
 body {
     display: flex;
@@ -33,6 +35,18 @@ header {
     margin-bottom: 8.7rem;
 }
 
+header button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+
+    text-transform: uppercase;
+    width: 17rem;
+    
+    border-radius: .5rem;
+    border-style: none;
+
+}
+
 header,
 table {
     width: 112rem;
@@ -46,19 +60,15 @@ table {
 input {
     width: 46rem;
     padding: 1.5rem;
-    
+
     color: var(--input-text-color);
     background-color: var(--input-color);
 
-    border-radius: 5px;
+    border-radius: .5rem;
     border-style: none;
-
-   
-   
 }
 
 table {
-    
     border-collapse: collapse;
 }
 

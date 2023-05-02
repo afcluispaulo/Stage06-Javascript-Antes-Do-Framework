@@ -6,6 +6,7 @@
     --background-color: hsl(var(--hue), 4%, 19%);
 
     --text-color: hsl(0, 0%, 100%);
+    --text-color-button: #F75A68;
 
     --hue: 194;
     --primary-color: hsla(var(--hue), 72%, 13%, 1);
@@ -44,7 +45,7 @@ header button {
 
     border-radius: .5rem;
     border-style: none;
-
+    cursor: pointer;
 }
 
 header {
@@ -122,4 +123,11 @@ td.user img {
 
     object-fit: cover;
     border-radius: 50%;
+}
+
+td button.remove {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-button);
+    cursor: pointer;
 }

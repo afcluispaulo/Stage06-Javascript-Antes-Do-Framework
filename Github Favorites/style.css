@@ -2,21 +2,21 @@
     font-size: 62.5%;
 
     --ff-primary: 'Poppins', sans-serif;
-    --background-color: #2F2F33;
+    --hue-bg: 240;
+    --background-color: hsl(var(--hue-bg), 4%, 19%);
 
-    --text-color: white;
+    --text-color: hsl(0, 0%, 100%);
 
     --hue: 194;
     --primary-color: hsla(var(--hue), 72%, 13%, 1);
+    --primary-color-dark: hsla(var(--hue), 61%, 6%, 0.5);
+    --primary-color-light: hsla(var(--hue),65%, 7%, 1);
 
-    --hue-input: 191;
-    --input-color: hsla(var(--hue-input), 65%, 7%, 1);
+    --input-color: hsla(var(--hue), 65%, 7%, 1);
 
-    --hue-input-txt-color: 240;
-    --input-text-color: hsla(var(--hue-input-txt-color), 6%, 51%, 1);
+    --input-text-color: hsla(var(--hue), 6%, 51%, 1);
 
-    --hue-header-button: 195;
-    --button-color: hsla(var(--hue-header-button), 91%, 25%, 1);
+    --button-color: hsla(var(--hue), 91%, 25%, 1);
 }
 
 body {
@@ -41,17 +41,19 @@ header button {
 
     text-transform: uppercase;
     width: 17rem;
-    
+
     border-radius: .5rem;
     border-style: none;
 
 }
 
-header,
-table {
+header {
     width: 112rem;
 }
 
+table {
+    width: 100%;
+}
 .input-wrapper {
     display: flex;
     flex-direction: row;
@@ -69,6 +71,7 @@ input {
 }
 
 table {
+    width: 112rem;
     border-collapse: collapse;
 }
 
@@ -89,12 +92,21 @@ table th {
     background-color: var(--primary-color);
     text-align: left;
     font-weight: normal;
-    padding: 1.6rem 2.4rem 1.6rem 4.0rem;
+    padding: 1.6rem;
 }
 
 table td {
-    padding: 2.4rem 0 2.4rem 4rem;
+    padding: 2.4rem;
+    
+}
 
+
+table tr:nth-child(odd) {
+    background: var(--primary-color-dark);   
+}
+
+table tr {
+    background: var(--primary-color-light);
 }
 
 td.user {

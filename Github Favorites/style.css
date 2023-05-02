@@ -2,8 +2,8 @@
     font-size: 62.5%;
 
     --ff-primary: 'Poppins', sans-serif;
-    --hue-bg: 240;
-    --background-color: hsl(var(--hue-bg), 4%, 19%);
+    
+    --background-color: hsl(var(--hue), 4%, 19%);
 
     --text-color: hsl(0, 0%, 100%);
 
@@ -102,11 +102,12 @@ table td {
 
 
 table tr:nth-child(odd) {
-    background: var(--primary-color-dark);   
+    background: var(--primary-color-light);
+      
 }
 
 table tr {
-    background: var(--primary-color-light);
+    background: var(--primary-color-dark); 
 }
 
 td.user {

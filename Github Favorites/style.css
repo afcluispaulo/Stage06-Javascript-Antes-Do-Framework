@@ -2,10 +2,12 @@
     font-size: 62.5%;
 
     --ff-primary: 'Poppins', sans-serif;
-    --text-color: #303030;
+    --background-color: #303030;
+
+    --text-color: white;
 
     --hue: 194;
-    --primary-color: hsl(var(--hue), 100%, 63%);
+    --primary-color: hsla(var(--hue), 72%, 13%, 1);
 }
 
 
@@ -13,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--background-color);
 }
 
 header {
@@ -34,7 +37,12 @@ table {
 
 table * {
     font-size: 1.4rem;
-    color: var(--text-color);
+    color: var(--background-color);
+}
+
+table th,
+table td {
+    color: white
 }
 
 table th {
@@ -46,6 +54,7 @@ table th {
 
 table td {
     padding: 2.4rem 0 2.4rem 4rem;
+
 }
 
 td.user {

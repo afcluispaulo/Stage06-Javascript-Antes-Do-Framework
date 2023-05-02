@@ -14,8 +14,10 @@
     <header>
         <img src="assets/Gitfav.svg" alt="">
         <label for="github-Favorites"></label>
-        <input type="text" name="" id="github-Favorites" placeholder="Digite o Github username que quer favoritar">
-        <button>Favoritar</button>
+            <div class="input-wrapper">
+            <input type="text" name="" id="github-Favorites" placeholder="Digite o Github username que quer favoritar">
+            <button>Favoritar</button>
+        </div>
     </header>
     <table>
         <thead>
@@ -26,12 +28,14 @@
                 <th>Ação</th>
                 <th></th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td class="user">
                     <img src="https://github.com/maykbrito.png" alt="Imagem de maykbrito">
                     <a href="https://github.com/maykbrito" target="_blank">
                     <p>Mayk Brito</p>
-                    <span>maykbrito</span>
+                    <span>/maykbrito</span>
                     </a>
                 </td>
                 <td class="repositories">
@@ -44,7 +48,7 @@
                     <button class="remove">Remover</button>
                 </td>
             </tr>
-        </thead>
+        </tbody>
     </table>
 </body>
 </html>

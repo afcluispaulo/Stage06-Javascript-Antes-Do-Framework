@@ -8,8 +8,26 @@
     --primary-color: hsl(var(--hue), 100%, 63%);
 }
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header,
 table {
     width: 112rem;
+}
+
+table {
+    
     border-collapse: collapse;
 }
 
@@ -28,6 +46,12 @@ table th {
 
 table td {
     padding: 2.4rem 0 2.4rem 4rem;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 td.user img {

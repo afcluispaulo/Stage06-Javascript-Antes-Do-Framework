@@ -2,12 +2,18 @@
     font-size: 62.5%;
 
     --ff-primary: 'Poppins', sans-serif;
-    --background-color: #303030;
+    --background-color: #2F2F33;
 
     --text-color: white;
 
     --hue: 194;
     --primary-color: hsla(var(--hue), 72%, 13%, 1);
+
+    --hue-input: 191;
+    --input-color: hsla(var(--hue-input), 65%, 7%, 1);
+
+    --hue-input-txt-color: 240;
+    --input-text-color: hsla(var(--hue-input-txt-color), 6%, 51%, 1);
 }
 
 
@@ -22,11 +28,33 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin-top: 11.5rem;
+    margin-bottom: 8.7rem;
 }
 
 header,
 table {
     width: 112rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 46rem;
+    padding: 1.5rem;
+    
+    color: var(--input-text-color);
+    background-color: var(--input-color);
+
+    border-radius: 5px;
+    border-style: none;
+
+   
+   
 }
 
 table {

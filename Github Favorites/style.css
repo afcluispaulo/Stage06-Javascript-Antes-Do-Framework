@@ -1,7 +1,7 @@
 :root {
     font-size: 62.5%;
 
-    --ff-primary: 'Poppins', sans-serif;
+    --ff-primary: 'Roboto', sans-serif;
     
     --background-color: hsl(var(--hue), 4%, 19%);
 

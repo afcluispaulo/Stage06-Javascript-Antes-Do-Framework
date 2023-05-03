@@ -100,6 +100,11 @@ td.user span {
 }
 
 table th {
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 160%;
+
     background-color: var(--primary-color);
     text-align: left;
     font-weight: normal;

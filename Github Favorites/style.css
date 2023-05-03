@@ -36,7 +36,26 @@ header {
     margin-bottom: 8.7rem;
 }
 
+input {
+    font-family: var(--ff-primary);
+    font-size: 1.6rem;
+    line-height: 100%;
+
+    width: 46rem;
+    padding: 1.5rem;
+
+    color: var(--input-text-color);
+    background-color: var(--input-color);
+
+    border-radius: .5rem;
+    border-style: none;
+}
+
 header button {
+    font-family: var(--ff-primary);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
     background-color: var(--button-color);
     color: var(--text-color);
 
@@ -60,16 +79,7 @@ table {
     flex-direction: row;
 }
 
-input {
-    width: 46rem;
-    padding: 1.5rem;
 
-    color: var(--input-text-color);
-    background-color: var(--input-color);
-
-    border-radius: .5rem;
-    border-style: none;
-}
 
 table {
     width: 112rem;

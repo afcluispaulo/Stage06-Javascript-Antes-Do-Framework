@@ -18,6 +18,8 @@
     --input-text-color: hsla(var(--hue), 6%, 51%, 1);
 
     --button-color: hsla(var(--hue), 91%, 25%, 1);
+    --border-color: hsla(var(--hue), 31%, 42%);
+
 }
 
 body {
@@ -84,6 +86,8 @@ table {
 table {
     width: 112rem;
     border-collapse: collapse;
+
+    border: 1px solid var(--border-color);
 }
 
 
@@ -113,7 +117,7 @@ table th {
 
 table td {
     padding: 2.4rem;
-    
+    text-align: left;
 }
 
 
@@ -128,8 +132,27 @@ table tr {
 
 td.user {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    align-self: center;
+    gap: 1.6rem;
+}
+
+
+td.user p {
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+td.user span,
+td.repositories,
+td.followers {
+    font-family: var(--ff-primary);
+    font-size: 2rem;
+    text-decoration: none;
+    
 }
 
 td.user img {

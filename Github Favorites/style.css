@@ -81,6 +81,11 @@ table {
     flex-direction: row;
 }
 
+div#container {
+    overflow-y: auto;
+    min-height: 37.6rem;
+    max-height: 68.7rem;
+}
 
 
 table {
@@ -88,13 +93,20 @@ table {
     border-collapse: collapse;
 
     border: 1px solid var(--border-color);
+    
+    
 }
 
+table tbody {
+    
+}
 
 table * {
     font-size: 1.4rem;
     color: var(--background-color);
+    
 }
+
 
 table th,
 table td,
@@ -118,6 +130,7 @@ table th {
 table td {
     padding: 1.6rem 2.4rem 1.6rem 4.0rem;
     text-align: left;
+    
 }
 
 
@@ -133,8 +146,6 @@ table tr:nth-child(even) {
 
 table tr {
     background: var(--primary-color-dark); 
-    
-   
 }
 
 td.user {

@@ -79,6 +79,7 @@ table {
 .input-wrapper {
     display: flex;
     flex-direction: row;
+    gap: .8rem;
 }
 
 div#container {

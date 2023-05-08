@@ -10,4 +10,6 @@ export class FavoritesView extends Favorites {
         super(root)
         this.tbody = this.root.querySelector('table tbody')
     }
+
+    
 }

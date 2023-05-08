@@ -38,4 +38,11 @@ export class FavoritesView extends Favorites {
 
         return tr
     }
+
+    removeAllTr() {
+        this.tbody.querySelectorAll('tr')
+        .forEach((tr) => {
+           tr.remove()
+        })
+    }
 }

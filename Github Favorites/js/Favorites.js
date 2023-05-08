@@ -1,3 +1,5 @@
+import { GithubUser } from "./GithubUser.js"
+
 export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
@@ -10,6 +12,41 @@ export class FavoritesView extends Favorites {
         super(root)
         this.tbody = this.root.querySelector('table tbody')
     }
+
+
+    update() {
+        this.removeAllTr()
+
+        this.entries.forEach(user => {
+            const row = this.createRow()
+            
+            row.querySelector('.user img').src = `https://github.com/${user.login}.png`
+
+            row.querySelector('.user img').alt = `Imagem de ${user.name}`
+
+            row.querySelector('.user a').href = `https://github.com/${user.login}`
+
+            row.querySelector('.user p').textContent = user.name
+
+            row.querySelector('.user span').textContent = user.login 
+
+            row.querySelector('.repositories').textContent = user.public_repos
+            row.querySelector('.followers').textContent = user.followers
+
+            row.querySelector('.remove').onclick = () => {
+                const isOk = confirm('Tem certeza que deseja deletar essa linha?')
+                if ( isOk ) {
+                    this.delete(user)
+                }
+
+            }
+
+            this.tbody.append(row)
+        })
+
+        
+    }
+
 
     createRow() { 
 

@@ -5,12 +5,26 @@ export class Favorites {
         this.root = document.querySelector(root)
 
     }
+
+    load() {
+        this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+        
+
+    }
+
+    save() {
+        localStorage.setItem('@github-favorites:', JSON.stringify(this.entries))
+    }
+
 }
+
 
 export class FavoritesView extends Favorites {
     constructor(root) {
         super(root)
         this.tbody = this.root.querySelector('table tbody')
+        
+        this.update()
         this.onadd()
     }
 

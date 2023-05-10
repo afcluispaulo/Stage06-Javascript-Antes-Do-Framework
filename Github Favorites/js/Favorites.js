@@ -11,8 +11,17 @@ export class FavoritesView extends Favorites {
     constructor(root) {
         super(root)
         this.tbody = this.root.querySelector('table tbody')
+        this.onadd()
     }
 
+    onadd() {
+        const addButton = this.root.querySelector('.input-wrapper button')
+        addButton.onclick = () => {
+            const { value } = this.root.querySelector('.input-wrapper input')
+
+            this.add(value)
+        }
+    }
 
     update() {
         this.removeAllTr()

@@ -42,6 +42,15 @@ export class Favorites {
 
     }
 
+    delete(user) {
+        // higher-order functions (map, filter, find, reduce)
+        const filteredEntries = this.entries
+        .filter(entry => entry.login !== user.login)
+
+        this.entries = filteredEntries
+        this.update()
+        this.save()
+    }
 
 }
 

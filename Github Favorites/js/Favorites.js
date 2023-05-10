@@ -16,6 +16,33 @@ export class Favorites {
         localStorage.setItem('@github-favorites:', JSON.stringify(this.entries))
     }
 
+    async add(username) {
+        try {
+
+            const userExists = this.entries.find(entry => entry.login === username) // significa que o usuário existe
+
+            if (userExists) {
+                throw new Error('Usuário já cadastrado')
+            }
+
+            const user = await GithubUser.search(username)
+            console.log(user)
+            
+            if (user.login === undefined) {
+                throw new Error("Usuário não encontrado!")
+            }
+
+            this.entries = [user, ...this.entries]
+            this.update()
+            this.save()
+
+        } catch(error) {
+            alert(error.message)
+        }
+
+    }
+
+
 }
 
 

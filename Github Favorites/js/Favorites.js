@@ -4,7 +4,7 @@ export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
         this.load()
-        
+        console.log(this.root)
     }
 
     load() {
@@ -59,6 +59,7 @@ export class Favorites {
 export class FavoritesView extends Favorites {
     constructor(root) {
         super(root)
+
         this.tbody = this.root.querySelector('table tbody')
         
         this.update()

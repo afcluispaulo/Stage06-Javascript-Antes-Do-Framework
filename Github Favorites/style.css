@@ -19,7 +19,7 @@
 
     --button-color: hsla(var(--hue), 91%, 25%, 1);
     --border-color: hsla(var(--hue), 31%, 42%);
-
+    --slider-color: hsl(191, 31%, 42%);
 }
 
 body {
@@ -76,6 +76,7 @@ header {
 table {
     width: 100%;
 }
+
 .input-wrapper {
     display: flex;
     flex-direction: row;
@@ -90,7 +91,15 @@ div#container {
     border-radius: 1.2rem;
     border: .1rem solid var(--border-color);
 }
+::-webkit-scrollbar {
+    width: .6rem;
+    max-height: 1.2rem;
+}
 
+::-webkit-scrollbar-thumb {
+    
+    background-color: var(--slider-color)
+} 
 
 table {
     width: 112rem;

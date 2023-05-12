@@ -9,8 +9,6 @@ export class Favorites {
 
     load() {
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
-        
-
     }
 
     save() {

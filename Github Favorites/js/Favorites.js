@@ -1,14 +1,19 @@
 import { GithubUser } from "./GithubUser.js"
+import { emptyDiv } from "./Elements.js"
 
 export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
         this.load()
+        
+        
         console.log(this.root)
     }
 
+    
     load() {
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+        
     }
 
     save() {
@@ -34,7 +39,7 @@ export class Favorites {
             this.entries = [user, ...this.entries]
             this.update()
             this.save()
-
+            
         } catch(error) {
             alert(error.message)
         }
@@ -51,6 +56,8 @@ export class Favorites {
         this.save()
     }
 
+    
+
 }
 
 
@@ -62,6 +69,8 @@ export class FavoritesView extends Favorites {
         
         this.update()
         this.onadd()
+
+        
     }
 
     onadd() {
@@ -75,7 +84,7 @@ export class FavoritesView extends Favorites {
 
     update() {
         this.removeAllTr()
-
+        this.emptyEntries()
         this.entries.forEach(user => {
             const row = this.createRow()
             
@@ -141,4 +150,18 @@ export class FavoritesView extends Favorites {
            tr.remove()
         })
     }
+     emptyEntries() {
+        console.log(this.entries)
+        
+        if (this.entries.length == 0 ) { 
+            emptyDiv.classList.remove("hide")
+        } else {
+            emptyDiv.classList.remove("empty")
+            emptyDiv.classList.add("hide")
+        
+        }
+    }
+    
+   
+   
 }

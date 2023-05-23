@@ -1,5 +1,7 @@
-const emptyDiv = document.querySelector(".empty")
+const containerDiv = document.getElementById("container")
+const emptyEntries = document.querySelector(".empty")
 
 export {
-    emptyDiv,
+    containerDiv,
+    emptyEntries,
 }

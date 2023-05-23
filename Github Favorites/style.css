@@ -9,15 +9,22 @@
 
     --ff-primary: 'Roboto', sans-serif;
     
-    --background-color: hsl(var(--hue), 4%, 19%);
+    
     --bg-color-empty: hsla(195, 4%, 32%, 1);
     --text-color: hsl(0, 0%, 100%);
+    
     --text-color-button: #F75A68;
 
     --hue: 194;
+    --hue-secondary: 0;
+
     --primary-color: hsla(var(--hue), 72%, 13%, 1);
     --primary-color-dark: hsla(var(--hue), 61%, 6%, 0.5);
     --primary-color-light: hsla(var(--hue),65%, 7%, 1);
+
+    --secondary-color-dark: hsl(var(--hue-secondary), 0%, 16%);
+    --secondary-color-light: hsl(var(--hue-secondary), 0%, 100%);
+
 
     --input-color: hsla(var(--hue), 65%, 7%, 1);
 
@@ -32,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: var(--secondary-color-dark);
 }
 
 .hide {
@@ -61,6 +68,8 @@ input {
 
     border-radius: .5rem;
     border-style: none;
+
+    
 }
 
 header button {
@@ -76,7 +85,7 @@ header button {
     line-height: 2.4rem;
 
     background-color: var(--button-color);
-    color: var(--text-color);
+    color: var(--secondary-color-light);
 
     text-transform: uppercase;
     width: 17rem;
@@ -102,12 +111,26 @@ table {
 
 div#container {
     overflow-y: auto;
-    min-height: 37.6rem;
-    max-height: 8.7rem;
     
+    max-height: 20.8rem;
     border-radius: 1.2rem;
     border: .1rem solid var(--border-color);
 }
+
+
+
+.emptyDivContainer {
+    overflow-y: auto;
+
+    min-height: 38.8rem;
+    border-radius: 1.2rem;
+
+    border: .1rem solid var(--border-color);
+
+    background-color: var(--primary-color-light);
+    color: var(--input-text-color);
+}
+
 div#container::-webkit-scrollbar {
     width: .6rem;
     max-height: 1.2rem;
@@ -133,9 +156,14 @@ table * {
 table th,
 table td,
 td.user p,
-td.user span {
-    color: white
+td.user span,
+td.user a {
+    color: var(--secondary-color-light);
+    text-decoration: none;
 }
+
+
+
 
 table th {
     font-family: var(--ff-primary);
@@ -175,6 +203,8 @@ td.user {
     align-items: center;
     align-self: center;
     gap: 1.6rem;
+    
+    
 }
 
 
@@ -182,7 +212,8 @@ td.user p {
     font-family: var(--ff-primary);
     font-weight: bold;
     font-size: 2rem;
-    text-decoration: none;
+    text-decoration-line: none;
+    
 }
 
 td.user span,
@@ -190,7 +221,7 @@ td.repositories,
 td.followers {
     font-family: var(--ff-primary);
     font-size: 2rem;
-    text-decoration: none;
+    text-decoration-line: none;
     
 }
 

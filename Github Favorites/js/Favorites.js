@@ -1,5 +1,5 @@
 import { GithubUser } from "./GithubUser.js"
-import { emptyDiv } from "./Elements.js"
+import { containerDiv, emptyEntries } from "./Elements.js"
 
 export class Favorites {
     constructor(root) {
@@ -136,7 +136,7 @@ export class FavoritesView extends Favorites {
             9589  
             </td>
             <td>
-                <button class="remove">&times;</button>
+                <button class="remove">Remover</button>
             </td>
         </tr>
         `
@@ -154,11 +154,17 @@ export class FavoritesView extends Favorites {
         console.log(this.entries)
         
         if (this.entries.length == 0 ) { 
-            emptyDiv.classList.remove("hide")
+            emptyEntries.classList.remove("hide")
+
+            containerDiv.classList.add("emptyDivContainer")
+            emptyEntries.classList.add("empty")
+
         } else {
-            emptyDiv.classList.remove("empty")
-            emptyDiv.classList.add("hide")
-        
+            emptyEntries.classList.remove("empty")
+            containerDiv.classList.remove("emptyDivContainer")
+
+            emptyEntries.classList.add("hide")
+            
         }
     }
     

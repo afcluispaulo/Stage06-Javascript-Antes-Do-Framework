@@ -21,3 +21,13 @@
     <li>Servidor local com NodeJS</li>
 </ul>
 
+# Imagem da tela de Home
+<img src="../assets/SPA Universe/Home.jpg" alt="Imagem da tela de Home">
+
+# Imagem da tela de Exploração
+<img src="../assets/SPA Universe/Exploração.jpg" alt="Imagem da tela de Exploração">
+
+# Imagem da tela de O Universo
+<img src="../assets/SPA Universe/O Universo.jpg" alt="Imagem da tela de O Universo">
+
+

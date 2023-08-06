@@ -1,5 +1,4 @@
 # Projeto SPA Universe
-
 <p> Projeto para aplicar o conceito de SPA (Single Page Application) sem o uso de frameworks, como o React.js, rodando em servidor local e simples com o NodeJS</p>
 
 # Tecnologias usadas

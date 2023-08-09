@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--secondary-color-dark);
+    background-color: black;
 }
 
 .hide {
@@ -112,7 +112,7 @@ table {
 div#container {
     overflow-y: auto;
     
-    max-height: 20.8rem;
+    max-height: 38.8rem;
     border-radius: 1.2rem;
     border: .1rem solid var(--border-color);
 }

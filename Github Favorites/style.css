@@ -101,7 +101,7 @@ header button {
   }
   
   .input-wrapper button:hover svg path {
-    fill: #065E7C;
+    fill: var(--primary-color-light);
   }
   
 

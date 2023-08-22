@@ -79,7 +79,7 @@ header button {
     justify-content: center;
     gap: .8rem;
 
-    align-items: center;
+   
     font-family: var(--ff-primary);
     font-size: 1.4rem;
     line-height: 2.4rem;
@@ -94,6 +94,16 @@ header button {
     border-style: none;
     cursor: pointer;
 }
+
+.input-wrapper button:hover {
+    background-color: #fff;
+    color: var(--primary-color-light);
+  }
+  
+  .input-wrapper button:hover svg path {
+    fill: #065E7C;
+  }
+  
 
 header {
     width: 112rem;

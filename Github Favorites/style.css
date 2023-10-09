@@ -122,7 +122,7 @@ table {
 div#container {
     overflow-y: auto;
     
-    max-height: 38.8rem;
+    max-height: 40.8rem;
     border-radius: 1.2rem;
     border: .1rem solid var(--border-color);
 }
@@ -132,7 +132,7 @@ div#container {
 .emptyDivContainer {
     overflow-y: auto;
 
-    min-height: 38.8rem;
+    min-height: 40.8rem;
     border-radius: 1.2rem;
 
     border: .1rem solid var(--border-color);

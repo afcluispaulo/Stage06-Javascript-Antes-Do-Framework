@@ -96,7 +96,7 @@ export class FavoritesView extends Favorites {
 
             row.querySelector('.user p').textContent = user.name
 
-            row.querySelector('.user span').textContent = user.login 
+            row.querySelector('.user span').textContent = `/${user.login}` 
 
             row.querySelector('.repositories').textContent = user.public_repos
             row.querySelector('.followers').textContent = user.followers

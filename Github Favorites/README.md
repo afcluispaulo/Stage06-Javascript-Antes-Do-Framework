@@ -19,4 +19,6 @@
     <li>Fluxo de aplicação com try, catch e throw </li>
 </ul>
 
+# Vídeo demonstrando o projeto
+https://github.com/afcluispaulo/Stage06-Javascript-Antes-Do-Framework/assets/102933945/38b374cd-ae01-456f-a087-63b784bb1797
 
